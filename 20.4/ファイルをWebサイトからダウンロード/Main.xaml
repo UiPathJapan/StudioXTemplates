@@ -1,0 +1,188 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="587,2725" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OmniPage.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="508,2660" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=True,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard CloseMode="{x:Null}" OpenMode="{x:Null}" sap2010:Annotation.AnnotationText="これは完全に機能するテンプレートです。このテンプレートを試すには [実行] をクリックしてください (または F5 キーを押してください)。&#xA;&#xA;この [アプリケーション/ブラウザーを使用] アクティビティは Internet Explorer を開いてファイルをダウンロードする Web サイトへ移動するよう設定されています。ターゲットを変更するには ☰ アイコンをクリックして [画面上でターゲットを指定] を選択し、任意のデスクトップ アプリケーションまたは Web ブラウザーをクリックしてください。" DisplayName="ブラウザーを使用 IE: UiPath Demo App" sap:VirtualizedContainerService.HintSize="466,1438" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="実行" sap:VirtualizedContainerService.HintSize="454,1106" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NNavigateBrowser Action="Refresh" sap2010:Annotation.AnnotationText="[ブラウザー内を移動] アクティビティを使用してブラウザーを更新し、この Web サイトが既定のステートになっているようにします。" DisplayName="ブラウザー内を移動 - 更新" sap:VirtualizedContainerService.HintSize="412,137" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NNavigateBrowser>
+            <ui:GetLastDownloadedFile Timeout="{x:Null}" sap2010:Annotation.AnnotationText="[ダウンロード フォルダー] プロパティで指定したフォルダーに新しいファイルが追加されたかどうかを監視します。&#xA;&#xA;ファイルのダウンロードが完了すると [ダウンロードされるファイル] を使用してファイルの情報が保存されるので、ファイルを後から別のアクティビティで使用できます。" DisplayName="ファイルをダウンロード" DownloadFolder="[string.Format(&quot;{0}\Downloads&quot;, Environment.GetFolderPath(Environment.SpecialFolder.UserProfile))]" File="[Saved.Values(Of FileInfo)(&quot;ダウンロードされたファイル&quot;)]" sap:VirtualizedContainerService.HintSize="412,837" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+              <ui:GetLastDownloadedFile.Body>
+                <ActivityAction>
+                  <Sequence DisplayName="実行" sap:VirtualizedContainerService.HintSize="400,544" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick sap2010:Annotation.AnnotationText="Web サイト上で [CSV をエクスポート] ボタンをクリックしてダウンロードをトリガーします。" ClickType="Single" DisplayName="[CSV をエクスポート] をクリック" sap:VirtualizedContainerService.HintSize="358,207" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/suppliers?locale=jp" DesignTimeRectangle="1007, 312, 147, 36" ElementType="Text" FriendlyName="'CSV をエクスポート'" FullSelectorArgument="&lt;html title='UiPath Demo App' /&gt;&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;html title='UiPath Demo App' /&gt;&lt;webctrl tag='A' type='' aaname='CSV をエクスポート' check:text='CSV をエクスポート' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJcAAAAoCAYAAADzA2jZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOgSURBVHhe7ZwxaxRBFIDzAyxs7WzsxR8g9jaWlhaCncTGQhAFsTPYCBYRFKwUrFJqI4il9iKEGEM0JhwhBJEgo9+673g3zuzO7M4cMb4PhrudefNmcvl4s3fFLjjDqITJZVRjRq7J/k+3+GzHnb6z4RaurFqzltRO3lh3l558c6vbB61Jf5jKhVgE3X+1696v/2h7DaMfpMKb44trM4JN5cK82yuT9sow8kEwPBKmclG1/LJmGDlw+lG9hKlcnJ2GMRbtkcllFMXkMqphchnVMLmMaphcRjWOjFzz3vNhWO+w/5/0/o6MXLyXVot5f0b+enJdeh8l8+lc/4xc7K+rzYOUdfx9hVoqodic+amUzKlzjZLrxbt9d/bepjt2da2Zf+rmZ7f0crcdde7j1oE7/+CLO3H9UzPO6+Wn280Y/fS9/vC9udbQz3gXqfslLrV1EYrXLZVasWMouY7ONViuR2/2mjlIgGSIhDgIJsKIeCLcrZVJc81c+ph/7flOMyZIP7ExcvfqM2R+15ycfKFY+nJbSUrm07kGy0UVOnN3o5EqBjkvLm+1V3+DaAioIZ7+WF5y6jaE3Hl98an5Sq9bipLr6FyD5JKq1VVdAAFpMVGksmlE2hChPc78Mb/fS+uib1wzz1w+qfG5eX2YL20sOscguTjKiO+qWiBHHAIhoh9PH+PIChynXPtHJcT2R7+0VFJjU+Jq5uq71jCW0zT6OjSew0yu9jUrIfdWxPfJBYhDJZJN62rHfPrkJl9kC93k+0g+eZ9DbnyMnDwpsX5MaE6pvWti6wxZS8+pLpegJdOC0ceXAOCYlPdd+HvN2TvkxsdIzSNxXfGhsdS+sZTMqXNVvecK4d9T6SOW41OqWIzQPnP2DrnxIVJz+HGxeaH+nNgxlMyncw2SC5AkVGX0kaZ/8xIQS8sl91l8S+SVnzW6KPFBjM2ROj8W5/enxgmp66dSMp/ONVguuVnnKEMQKo8cl1Q2Ged3MBmXKuVXPCSlv+ubpUBcKsTmtj5SY/riSq1VgpLr6FyD5QIkkp8TmE9F0uL440jEuC+QVK2+X+UFYrtaDVJy566fkm8elFxH5xol1/8An4t9NumYXEY1TC6jGiaXUQ2Ty6iGyWVUw+QyqmFyGdUIymUPIjHGEn0QCY++4RE4hjEU/Lnw8Gt7peTCOkqaCWbkgjuP3+41p59+cOBULiCICoZk1qylNo7Cc0ub8cdWGkZpTC6jEs79An8tmmxvWG67AAAAAElFTkSuQmCC" InformativeScreenshot="002b5072554ff2aeda4c228d1500234f.png" SearchSteps="FuzzySelector, Image" Text="CSV をエクスポート" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='A' type='' /&gt;">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="842, 312, 157, 36" ElementType="Button" FriendlyName="'新しいサプライヤー'" FullSelectorArgument="&lt;html title='UiPath Demo App' /&gt;&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;html title='UiPath Demo App' /&gt;&lt;webctrl tag='BUTTON' type='submit' aaname='新しいサプライヤー' check:text='新しいサプライヤー' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKEAAAAoCAYAAACW7pqmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKmSURBVHhe7ZxNihRBEIXnCB7JI3gEd27nIq7dup1TeATXrgZxIaIyq2EQkZLAfk10EJkZmZVZ0er74GMq4ycb5dFNb/pmIyQZhpCkcxHC959+bLd337dntx+3m1f3lE5VcvXizZft/tvPU+L+cA7hw+Mvho8eouRM3vDAOYTyDugtULrCl2+/npKnQihFb5jSFcq7IWAIaZqAIaRpAoaQpgkYQpomYAhpmoAhpGmCaSEUvLoVeL1/yf/h37hXsDSEHravz0dae+1aLyL28Xe1pdcp1a9FsCuENdC3O9pW33Nkx7N2T60X1d4RQc9Hre3Vetcg2P1OKJTO+tmz1fcc2fGs3VPq9eLdMdPWa7T62YIpH8eC/mvrJVt9z+iONzeKvSfi6F7UyP3ejIedOUqw/OO4BPr6vog9O7XZ0V5UfUcP+o6S0TnR4vVt7SjBtC8mnkLPOWLPTm12tBdxdL+1p2n1Nd6s6PW82irBtBAKrVrrHLF3pzRfqou1XsTR/dqe7unnlqXZUl3sxbsjIlj+cWzna+eSek4/RyzNl+pirddydLe0B2xNn2t6s14tQ/BXvBPqOf0ccfW8dXTf7gFd0z2v7mln7TlTMCWEwKv3nD3tjD23XD2vHd3t3Vs9f5RgaggFW+85W0t9XdfPe91z1+juyF7vTu/8UYLdIRRqf7U9NcHWoe7p5z2O3gO8Xk3g9Vr27vXOHyXY/cXEe/bOpRrqGm/GCrxej8Dr1QRer6TG60ft3e+dP0qw7IuJPZdqdL3X+v8OpoWQ0l4BQ0jTBAwhTRMwhDRNwBDSNAFDSNMEDCFNEzCENE1wDiF/Go4eqfxYJjiHUH4k0xumdLbys3DvPjydkqdCKMivZ/Jjma5Swvf89eeLX2kVLkJISAYMIUlm234DCRBpZqCnPLUAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" Text="新しいサプライヤー" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='BUTTON' type='submit' /&gt;" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick sap2010:Annotation.AnnotationText="Internet Explorer のダウンロード確認ダイアログの [保存] ボタンをクリックします。" ClickType="Single" DisplayName="[保存] をクリック" sap:VirtualizedContainerService.HintSize="358,207" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="874, 952, 102, 25" ElementType="Button" FriendlyName="'保存'" FullSelectorArgument="&lt;wnd app='iexplore.exe' cls='IEFrame' title='UiPath Demo App - Internet Explorer' /&gt;&lt;wnd aaname='通知' cls='DirectUIHWND' /&gt;&lt;ctrl automationid='IENotificationBar' /&gt;&lt;ctrl name='保存' role='split button' /&gt;" FuzzySelectorArgument="&lt;wnd app='iexplore.exe' cls='IEFrame' title='UiPath Demo App - Internet Explorer' /&gt;&lt;wnd aaname='通知' cls='DirectUIHWND' /&gt;&lt;ctrl automationid='IENotificationBar' /&gt;&lt;ctrl name='保存' role='split button' automationid='' check:text='保存' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGoAAAAdCAYAAABCBvnuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKQSURBVGhD7ZULbqswEEVZFOymIWt5QJbSQKWsozIo28j/u4N5MxSIbQYqgiMT1ZaOiscf6D2YeODaWzQn6k0aK2q1WjkswrVOUff73TEAU5kNFnW73RwDMJWZE/VirIm6Xq+OAZjKzIl6MdZEXS6XybBeBBAs1uzYVDCV2QRErWERBDCfB+B5HkuXjK+5B/Ovdn1KWBN1Pp/NUiQQhBkUCZ6OpGiNK3Way4jkCSHT9vHwPmU/C1vzshBfCOb+YzGVmXVRWRhAUmhCJPrqTfC/QYKDBIr6WpaI/SSj6wISPNn0LK31I7Am6nQ6mSOn0DCc/AQ5Ba+ciAdBkjPrMOzyL78mzB7zae9mDzpNKC2v95KhMZTfqo+Ay4x73hp9bo1VUfS58SpRcl0JtkWOb74qQh9T11JNvkcGIQbC7k/iuyQ+SVdmQyQRg0Udj0cz5DH4YQyx70Oc4jXz4DJhSuvSMmT6XUm5/Zp5MrRGn5/jfeV9a7i54+jLTP7/uHEZa6J+AqHAUFQujVWBczJSPIFhWodZS+vGj3Nc1xN+Sy7zPCP5LTN6Tq6uM1jU4XAwiPgJRlR9gcH5MaSxjyHHMPOksYYU6zNIlRpSrRV6vWt+hcB7ebO06vfPfQZTmU1GVBlYFTRd+7Goxulk0HW9Zqgo7WXAz+xDvrZ/5x7PY03Ufr83iICo+q3wI9HURYSitL7nRyDK/rIUtazGGkSEIddzVNT9aL30iZwtH3OXM7VvAFOZTUCUD5FQ67ooFU0UCeJCl+mR+IB/lrFYE7Xb7d6S7394Kj8+2THi8wNF94w/i6nM/owoW1gTtd1uHQMwlZkT9WKsidpsNo4BmMrMiXox1kQ57ME1VpRr02tO1Fs0gP9ZtjIA2oCbmQAAAABJRU5ErkJggg==" InformativeScreenshot="04532211953570b4bca90825f1c885d8.png" SearchSteps="Selector, FuzzySelector, Image" Text="保存" TextMethod="AttributeText" TextSelector="&lt;ctrl role='split button' /&gt;">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="976, 952, 112, 25" ElementType="Button" FriendlyName="'キャンセル'" FullSelectorArgument="&lt;wnd app='iexplore.exe' cls='IEFrame' title='UiPath Demo App - Internet Explorer' /&gt;&lt;wnd aaname='通知' cls='DirectUIHWND' /&gt;&lt;ctrl automationid='IENotificationBar' /&gt;&lt;ctrl name='キャンセル' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd app='iexplore.exe' cls='IEFrame' title='UiPath Demo App - Internet Explorer' /&gt;&lt;wnd aaname='通知' cls='DirectUIHWND' /&gt;&lt;ctrl automationid='IENotificationBar' /&gt;&lt;ctrl name='キャンセル' role='push button' automationid='' check:text='キャンセル' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHQAAAAdCAYAAAB7YUi1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALpSURBVGhD7ZWNbaswEIAZCrYpZJYCGaWBSJnjCaOskf/fDe75cAzGHASnoaXIlj4pcOfDvs8QB+yY1LBCJzZIoavVyvIHoEar0Pv9bhkxxkJvt5tlxFihE8NY6PV6tYwYK3RiGAu9XC6DsJ574MyWZGwQlrOffd4PMRqhRYO9OaypWC+WMHMc8OZrIkbwotDlzIHZko6NAWOh5/N5GNIAHC5EJUiJvCekQc+5+LwgVe7lEHvy2R7EeZWbx15ZD+t31cbc9rocL4ac38c6Xpwree/hF4WmEMhNapsl8/MYvK54DVG7U2rjAAmJTSEGQvU14rW+Dn4vLq5RdP3gvANjoafTaRgYbj6AlIoVoCSMNw+CFzMin4ahMDmXi6vHsTZvMlPviTlBKn4LofW4BPOqtbDizWzLLXh8JcjYi4xHaEszEfkZFajSpeR6PkW92RyimYVsosH9hKJAZf1PDygHc/gbzajYixgLPR6PA5E03jzEjViZk2Azk2oOXqvxdrC2CxFT7iUoNOnOecAit3yuvoYKnB9AIq9ZBK4bAavl6Ghz3sCvCcUm6fIQulkCnFMKRCFPGyYgxWtCa7U1VIkNoeU6CKFPZTGIXPoQvYqx0MPhMBAZ35wDfkLFHiQ+OH7CfyfgOz4kVI5G4vODwhue6bGylna/Aa6LNz0T11ivWiOuQ8b0NfXYj8E++jIioaJZbpSRsYJMfMYackiwWS0yEazVRyiKV2pUQkX9ar118eVcnlOTyp8byWuj/fTDWOh+vx+MBQoNMzImWBQnekHGJJgjPt/Pa7kQZlRM0szBNfphyD+nzfpZyD/b+jMzkVv+rbghZDK2wK/Eop7/TUYlFBvSvcEMQv4WkBKUxvkLIk6hN1vyaHohT6uF95y2g4D1VGGddOzlGxgL3e12lg7+ffJD+fFFxlS+PvjB6JFnihU6MYyFbrdby4ixQieGsdDNZmMZMVboxDAWahk/1CCF2vF3hxU6qQHwH4bpcSF75I60AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" Text="キャンセル" TextMethod="AttributeText" TextSelector="&lt;ctrl role='push button' /&gt;" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:GetLastDownloadedFile.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:GetLastDownloadedFile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp BrowserType="IE" IconBase64="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" InformativeScreenshot="d1b67c8f6e05e2acc491684b6b1ace2e.png" Selector="&lt;html title='UiPath Demo App'/&gt;" Url="https://www.rpasamples.com/suppliers?locale=jp" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ueab:WriteCellX sap2010:Annotation.AnnotationText="「プロジェクトノートブック」の式を使用して、ファイルから.csv拡張子を除いた名前を取得します。ファイル名を「プロジェクトノートブック」の「FullFileName_Input 」セルに記入すると、式は拡張子を除外します。これは次のステップで同名の.xlsxファイルを作成するために使用されます。ファイル名には、[+] アイコンをクリックして表示される [保存された値を使用] メニューで [Name] プロパティを選択する事でアクセスできます。" Cell="[Notes.Sheet(&quot;File&quot;).Cell(&quot;FullFileName_Input&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="466,263" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[Saved.Values(Of FileInfo)(&quot;ダウンロードされたファイル&quot;).Name]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:WriteCellX>
+    <ueab:ExcelApplicationCard Password="{x:Null}" sap2010:Annotation.AnnotationText="既に同名のファイルが存在していないとして、ダウンロードされたファイルから.csv拡張子を除いた名前の.xlsxファイルを新規に作成します。「プロジェクトノートブック」の「FileNameNoExtension」セルを読み込むことで、前のステップでダウンロードしたファイルから.csv拡張子を除いた名前を取得しています。" DisplayName="Excel ファイルを使用" sap:VirtualizedContainerService.HintSize="466,789" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" WorkbookPath="[string.Format(&quot;{0}\{1}.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), Notes.Sheet(&quot;File&quot;).Cell(&quot;FileNameNoExtension&quot;))]">
+      <ueab:ExcelApplicationCard.Body>
+        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="454,489" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadCsvFile Encoding="{x:Null}" sap2010:Annotation.AnnotationText="ダウンロードした CSV ファイルを、保存した値の FullName プロパティを使用して開きます。 このアクティビティは CSV ファイルの結果を読み込み、[Excel ファイルを使用] アクティビティで新規作成したファイルに内容を書き込みます。" DataTable="[Excel.Sheet(&quot;Sheet1&quot;).DataTableOutValue]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[Saved.Values(Of FileInfo)(&quot;ダウンロードされたファイル&quot;).FullName]" sap:VirtualizedContainerService.HintSize="412,223" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ReadCsvFile>
+            <ueab:CreateTableX DisplayName="テーブルとして書式設定" HasHeaders="True" sap:VirtualizedContainerService.HintSize="412,136" sap2010:WorkflowViewState.IdRef="CreateTableX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" TableName="サプライヤー" />
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelApplicationCard.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelApplicationCard>
+  </ueab:SequenceX>
+</Activity>
