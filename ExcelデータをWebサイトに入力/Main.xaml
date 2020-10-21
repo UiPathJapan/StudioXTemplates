@@ -1,0 +1,259 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="832,3646" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="604,3581" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.ja.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="これは完全に機能するテンプレートです。試しに実行するには [実行] をクリック、または F5 キーを押します。&#xA;&#xA;この自動化プロジェクトでは Internet Explorer を開いてデータを入力する Web サイトへ移動しますが、他のブラウザーやデスクトップ アプリケーションの UI も自動化できます。ターゲットを変更するには 笘ｰ アイコンをクリックして [画面上でターゲットを指定] を選択します。&#xA;&#xA;IE 以外のブラウザーを使用するにはブラウザーの拡張機能をインストールする必要がありますのでご注意ください。詳細については次のリンク先をご覧ください: https://docs.uipath.com/studio/lang-ja/docs/about-extensions" DisplayName="ブラウザーを使用 IE: UiPath Demo App" sap:VirtualizedContainerService.HintSize="562,3491" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="実行" sap:VirtualizedContainerService.HintSize="550,3123" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl sap2010:Annotation.AnnotationText="現在のタブ内で特定の URL に移動できます。このアクティビティは、Excel などのデータ ソースからの動的な値を操作する場合に便利です。" DisplayName="URL に移動" sap:VirtualizedContainerService.HintSize="508,137" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.rpasamples.com">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGoToUrl>
+            <uix:NNavigateBrowser sap2010:Annotation.AnnotationText="[ブラウザー内を移動] アクティビティを使用して [前に戻る] や [更新] などの一般的なブラウザー操作を制御できます。" DisplayName="ブラウザー内を移動 - 前に戻る" sap:VirtualizedContainerService.HintSize="508,122" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NNavigateBrowser>
+            <ueab:ExcelApplicationCard Password="{x:Null}" sap2010:Annotation.AnnotationText="対象のアプリケーションに入力するデータを含む Excel ファイルを開きます。" DisplayName="Excel ファイルを使用" sap:VirtualizedContainerService.HintSize="508,2692" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" WorkbookPath="Suppliers.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Suppliers" />
+                  </ActivityAction.Argument>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="実行" sap:VirtualizedContainerService.HintSize="496,2402" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelForEachRow sap2010:Annotation.AnnotationText="このアクティビティ内のアクションを、指定した範囲のデータの各行に対して 1 回ずつ繰り返します。" DisplayName="Excel の繰り返し (各行)" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="454,2310" sap2010:WorkflowViewState.IdRef="ExcelForEachRow_1" Range="[Suppliers.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRow.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="実行" sap:VirtualizedContainerService.HintSize="442,2083" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick sap2010:Annotation.AnnotationText="ボタンをクリックして、サプライヤーをサイトに追加します。" ClickType="Single" DisplayName="クリック '新しいサプライヤー'" sap:VirtualizedContainerService.HintSize="400,196" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/suppliers?locale=jp" DesignTimeRectangle="526, 320, 141, 20" ElementType="Text" FriendlyName="'新しいサプライヤー'" FullSelectorArgument="&lt;webctrl idx='1' parentid='controlWrapper' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='controlWrapper' tag='SPAN' aaname='新しいサプライヤー' check:text='新しいサプライヤー' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJEAAAAYCAYAAAD6Zx8zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHPSURBVGhD7dALagRBCEXR7DbLzlImNIzwIldLqz+BROEwXU+t7uTj4/PrNcYpGI7RgeEYHRiO0YEhOIpyz4p6f8l/+BvLMAT0T6PyfT0/KXt31quwffu9W/SeKH8chm9ZWd/vqFWf7OyQ7J6sV+XvqJTOV2V7We9RGAr/oXrWZ7Lqk50dkt0T9bpFd1xp9Y5V/zEYOvax9uvzyKpPqjs0t1v+nordvarK/TRD5Wcuh+FbVtW+3lfR2clmd3tVeken9I5Ide7gi/o+uxyGRf4DV+eKzk42u9ur2N1f7Wmt+lo0e6AeZadhCOjlPludK7o70XyUH7Jexe5+tqc9fV6JZqP80C264wcM37Kyvp/PzhGd0+eKaD7KD1lvZXc32rPymZ4zNEvZrTAE9GE+W50jOqfPFXfPe7v7fs9KM+1RTvysPz8CQ8eK8s6Z+Bl/Xrl7Xu3udvfunr8cho6WzztnL+prrs9nnblrd3dnr7vTnb8chsI+MPpVnewonxvt6fMZu/dYUS9jRb2V7l53/nIYvunH6TOdo8xyLZrxrKjXYUW9jBX1IlrUr+rud+cvhyHwH+rPUTbu9+v/dwzH6MBwjA4Mx+jAcIwODMco+3p9A8Usttxbyg0OAAAAAElFTkSuQmCC" InformativeScreenshot="05abcedc05ce889064f7bb170ab36e9d.png" ScopeSelectorArgument="&lt;html title='UiPath Demo App' /&gt;" SearchSteps="FuzzySelector, Image" Text="新しいサプライヤー" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='SPAN' /&gt;">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="518, 312, 157, 36" ElementType="Button" FriendlyName="'新しいサプライヤー'" FullSelectorArgument="&lt;webctrl idx='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl type='submit' tag='BUTTON' aaname='新しいサプライヤー' check:text='新しいサプライヤー' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKEAAAAoCAYAAACW7pqmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKmSURBVHhe7ZxNihRBEIXnCB7JI3gEd27nIq7dup1TeATXrgZxIaIyq2EQkZLAfk10EJkZmZVZ0er74GMq4ycb5dFNb/pmIyQZhpCkcxHC959+bLd337dntx+3m1f3lE5VcvXizZft/tvPU+L+cA7hw+Mvho8eouRM3vDAOYTyDugtULrCl2+/npKnQihFb5jSFcq7IWAIaZqAIaRpAoaQpgkYQpomYAhpmoAhpGmCaSEUvLoVeL1/yf/h37hXsDSEHravz0dae+1aLyL28Xe1pdcp1a9FsCuENdC3O9pW33Nkx7N2T60X1d4RQc9Hre3Vetcg2P1OKJTO+tmz1fcc2fGs3VPq9eLdMdPWa7T62YIpH8eC/mvrJVt9z+iONzeKvSfi6F7UyP3ejIedOUqw/OO4BPr6vog9O7XZ0V5UfUcP+o6S0TnR4vVt7SjBtC8mnkLPOWLPTm12tBdxdL+1p2n1Nd6s6PW82irBtBAKrVrrHLF3pzRfqou1XsTR/dqe7unnlqXZUl3sxbsjIlj+cWzna+eSek4/RyzNl+pirddydLe0B2xNn2t6s14tQ/BXvBPqOf0ccfW8dXTf7gFd0z2v7mln7TlTMCWEwKv3nD3tjD23XD2vHd3t3Vs9f5RgaggFW+85W0t9XdfPe91z1+juyF7vTu/8UYLdIRRqf7U9NcHWoe7p5z2O3gO8Xk3g9Vr27vXOHyXY/cXEe/bOpRrqGm/GCrxej8Dr1QRer6TG60ft3e+dP0qw7IuJPZdqdL3X+v8OpoWQ0l4BQ0jTBAwhTRMwhDRNwBDSNAFDSNMEDCFNEzCENE1wDiF/Go4eqfxYJjiHUH4k0xumdLbys3DvPjydkqdCKMivZ/Jjma5Swvf89eeLX2kVLkJISAYMIUlm234DCRBpZqCnPLUAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" Text="新しいサプライヤー" TextMethod="AttributeText" TextSelector="&lt;webctrl type='submit' tag='BUTTON' /&gt;" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="[Excel の繰り返し (各行)] アクティビティの [CurrentRow] の [Internal Name] の値を、[Internal Name] のテキストボックスに入力します。" ClickBeforeMode="None" DisplayName="文字を入力 '内部名*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="400,282" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[CurrentRow.ByField(&quot;Internal Name&quot;)]">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/suppliers?locale=jp" DesignTimeRectangle="49, 150, 252, 30" ElementType="InputBox" FriendlyName="'INPUT  TextField219'" FullSelectorArgument="&lt;webctrl idx='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' aaname='内部名*' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQAAAAAiCAYAAACwYQfvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADWSURBVHhe7d2xDYRADEXB678QciISaiEh2oQWFtkSwbWwf0ayhDb3E5l/E4jVAXieZx7HMbdtM8YsPud5zjFG730HoB7u+65PYHG1/Pu+9953AKoKQI7vb0AAIJAAQDABgGACAMEEAIIJAAQTAAgmABBMACCYAEAwAYBgAgDBBACCCQAEEwAIJgAQTAAgmABAMAGAYAIAwQQAggkABBMACCYAEEwAIJgAQDABgGB/AahDgXUpFFhfHQKua+C19x2A71roVwVjzLpTV4Gv6+q97wAAieZ8AbFAE4z7e3SVAAAAAElFTkSuQmCC" InformativeScreenshot="27761360214428000ce6fecfdf058dbc.png" ScopeSelectorArgument="&lt;html title='UiPath Demo App' /&gt;" SearchSteps="FuzzySelector, Image">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="48, 120, 254, 29" ElementType="Text" FriendlyName="'内部名*'" FullSelectorArgument="&lt;webctrl id='TextFieldLabel221' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextFieldLabel221' tag='LABEL' type='' aaname='内部名*' check:text='内部名*' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQIAAAAhCAYAAAAyAKV8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJBSURBVHhe7dg9TsNAGIRhjgTUQA/U4QBADQeAHlpyiEjQRSJKkwKukTZVUuQKJmN5rI9l7fwoASm8j/RJju011YzXHBQA/j2KAABFAIAiALBAEQCgCABQBAAWKAIAFAGAFYrg+OiwuLw4r34B2EdbLYJu96W8/+31tTpTFI8PD+W5ODqX4+ufnx/VGQC/oS6C8Xj8LayrjCj0uWseF4HCfXtzXR+nVDZxXRwVTErnmgoFwHp+FEF8+yuwDqOum0NrLgMH1uHXmlgE6TqJBRR5XbobGQzey0K5v7urJ+5AAKyvtQji2z6GLQ20C8Nv6HjdgfazfI/4msdl40+MeM5ms1n5985OT8pRMaT3AFhPaxF4K6/RsaVF4LW+Jx477A63dw1+htbG4Pu8r+WoVFQCV51O/TwAm1GGGosghtth9rd9LIL0rZ6Oy0RrfZzjXYWnzfPTU1kGfiaAzSlvjUXg0PqtrGOHLhbBMrFE/OaPnxmSlkBuCDywfc5ntgh8MQY2fuOnRaDj3Cj4sQj8DD/Xf9OTFoTEnQmA7VLmlK0fReBRcFMOssd07J2E+L60CLwj0LHPa3LFYxQBsHut/yxsktsRLCsCTy7QTZ8MQhEAu7e1IshNuiNo4iJoG4oA2A1lc60icAFoFHBL1zV9GjRhRwD8DeVS+aqLAMD/RREAoAgAUAQAFigCABQBAIoAwAJFAIAiABCKYD6fF8PhsOj1egzD7PmMRqNiOp3Wua+LQBcmk0n1C8A+Uwn0+/0q95PiC7wi/ZPl/SU/AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" Text="内部名*" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='LABEL' type='' /&gt;" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="文字を入力 '外部名'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="400,225" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[CurrentRow.ByField(&quot;External Name&quot;)]">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/suppliers?locale=jp" DesignTimeRectangle="303, 150, 252, 30" ElementType="InputBox" FriendlyName="'INPUT  TextField222'" FullSelectorArgument="&lt;webctrl id='TextField222' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextField222' tag='INPUT' type='text' aaname='外部名' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQAAAAAiCAYAAACwYQfvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVHhe7d2xDYRADEXB7b8QciISaiEhIqEFn7wSV8T+GckEm/uJzKOAWON5nnrft47jqG3bjDGLz3me1Xs/A7Dv+3y473s+AGvr5e+9b+OrApDj23kBgEACAMEEAIIJAAQTAAgmABBMACCYAEAwAYBgAgDBBACCCQAEEwAIJgAQTAAgmABAMAGAYAIAwQQAggkABBMACCYAEEwAIJgAQDABgGACAMEEAIL9A9BXgftQYF8IBtbXh4B779u4rut/LfT7GzDGrDt9Dbz3fgZgfoFAVT9EWBNNS/JmRQAAAABJRU5ErkJggg==" InformativeScreenshot="4c7571a4c0b6ebef8285c5f5af5ce3ca.png" ScopeSelectorArgument="&lt;html title='UiPath Demo App' /&gt;" SearchSteps="FuzzySelector, Image">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="302, 120, 254, 29" ElementType="Text" FriendlyName="'外部名'" FullSelectorArgument="&lt;webctrl id='TextFieldLabel224' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextFieldLabel224' tag='LABEL' type='' aaname='外部名' check:text='外部名' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQIAAAAhCAYAAAAyAKV8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIESURBVHhe7di9bQJBEIZhSrLdhe0ubHeBmzBFIEFGREJg2iAlIqGF9Q3cdxpmdwGLPwneRxrp2OOWaL6do5cAPDyCAABBAIAgANAgCAAQBAAIAgANggAAQQCAIADQyIJgsVikl+en9P722q5sjUejzfp3v9+u5AaDn8137Lti37c1X7U9dH8+/21XAFxDFgS1hj+0XisFgTX31+dHdx1Z8PjnfFnAALicLAhqJ/i+iUD31LDaw6YLHwRqdk8TSFzXc3EyAXB+WRD45iud9qUgsCb393zDq6FLQaJ7KgsFo1cMvwbgcnaCQA2ok12f/dheCgKd6jb6G3+tZo97a097Vves/G8RAsB17ASBGtDKTnD/Tu+nAzWziad6LL+Hrks0VagAXE8XBGro2Ni11wSd+IdoP2t0nfy2lxdDoFTH/h6A/+uCQBOAaETX6a8gsMZW4yok1Kyx7FkfBNpDQaBXClUMCBNfOwCcX/ZnoYmNbnwQRLXvxiDQRGDXWrfSNUEA3EYWBP6U9k4NAlWpoRUQBAFwGztBoEnAKjoUBKWKE0GNgmBfEQTA5XRBoBAoNbo5dSI4JgiYCIDbKP5HAOCxEAQACAIABAGABkEAgCAAQBAAaBAEAAgCAE0QzGaztFqt0nq9TtPpNA2HQ4qi7rzU99KzD5PJZHNjuVy2ywDumfp+K6U/NHo7zcKEG2UAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" Text="外部名" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='LABEL' type='' /&gt;" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <Sequence sap2010:Annotation.AnnotationText="多くの Web サイトではクリックを使用してのみ対話可能な、ドロップダウンとして表示されるカスタム コントロールが使用されています。詳細な手順については次のリンク先をご覧ください: https://docs.uipath.com/studiox/v2020.10/lang-ja/docs/ui-automation#section-creating-variables-for-use-in-selectors &#xA;&#xA;動的な値 (例: この例では現在の行の値[Industry]) を選択するには、以下の手順に従います。&#xA;&#xA;他のアクティビティを含むことができるアクティビティ (例: [アプリケーション/ブラウザーを使用]、[Excel の繰り返し (各行)]、[グループ] など) の右上には、設定アイコンがあります。&#xA;-設定アイコンをクリックし、[値のマッピング] をクリックします。&#xA;- 左側で変数名を選択し、アプリ/Web のアクティビティ (例: [クリック]) でターゲットとする値を選択します。この例では、[CurrentRow] の [Industry] 値です。&#xA;- 残りの手順は [[Industry] をクリック] アクティビティ内で説明します。" DisplayName="グループ" sap:VirtualizedContainerService.HintSize="400,963" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Default="[CurrentRow.ByField(&quot;Industry&quot;)]" Name="VarIndustry" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ClickType="Single" DisplayName="クリック '業界'" sap:VirtualizedContainerService.HintSize="360,165" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/suppliers?locale=jp" DesignTimeRectangle="56, 458, 238, 32" FriendlyName="''" FullSelectorArgument="&lt;webctrl aria-role='option' id='industry-option' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='option' id='industry-option' tag='SPAN' type='' aaname='' check:native='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPIAAAAkCAYAAACzD2eWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAElSURBVHhe7d0xSgNBFIBhDyriEUTslHSKlZibqEcwbdKa1rR7iZEHs2ER42arnX18HzzYYaf9qyneRQEWT8iQwDHkw+G7rB7uy/XVpTGm8Xl+eiz7/VetdxBy/NjttvUEtCwivru9qadByFE5sBzDZoUMCyVkSEDIkICQIQEhQwJChgSEDAkIGRIQMiQgZJhJ13X1a9zYXSHDTNavL+Xj/a2eTos7cfc/QoYZjcV8TsRByDCzUzGfG3EQMjTgd8xTIg5Chkb0MU+NOAgZGhIBT404CBkaMuVJakjIkICQIQEhQwJChgSEDAkIGRIQMiQgZEhAyJCAkCGBP0OOhVCxkRFoXyxcjO2pvWPI/Xa3qNwY0/bE9tTN5rPWOwgZWC4hw+KV8gNrS5kaWo+gPwAAAABJRU5ErkJggg==" InformativeScreenshot="d5d9d94f98fbd6ac997d7b97414c111b.png" ScopeSelectorArgument="&lt;html title='UiPath Demo App' /&gt;" SearchSteps="FuzzySelector, Image" Text="" TextMethod="NativeScrapping" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="56, 429, 28, 29" ElementType="Text" FriendlyName="'業界'" FullSelectorArgument="&lt;webctrl id='industry-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='industry-label' tag='LABEL' type='' aaname='業界' check:text='業界' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAErSURBVFhH7ZPBDcIwEAQpCegCaAEhBHSRiB+IL+kiVEH+0EBepBKjRVlrYw6RiCh8vNIJ29i+8d5l5P6sCBABIkAEaAAUxdVNJ2OXZefGGIFxWZZ+fMnz+tRvenNgMZ+9EnwCwC/2qNIkea23Cdyl8gBM2CVwBiIAACnMd9tNPWu6qzJ7gC9mAohrlvW9OADR/jahZejdAVWYzFJvAF2sxF6qtxJYwqFvDlDsEwRejH7RuSUPoJvbBi/VxAhtVFrPCGU6wO/dCq0zhDpjHUlZCgsA+/i/9sYbgDrBl6EEob2WCKOQCmCpAaCfIS/BmD2gzoQXElCbE2oNYNFDWAubkJcyGZOr9VQnB/6hCBABIkAE8ABV9XD7NHHr1XLQ8ACn48Hd77d6NpScewLny4EmWGfp/AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" Text="業界" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='LABEL' type='' /&gt;" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NClick sap2010:Annotation.AnnotationText="- [画面上でターゲットを指定] を選択した後、F2 キーを押して選択を一時停止してから、ドロップダウンをクリックして開きます。&#xA;- UI 要素の選択の位置停止が解除されるまで待ちます (ホバーしている箇所の周りに緑色の四角形が表示されます)。&#xA;- ドロップダウン内のエントリをクリックします。&#xA;- その上でホバーし、設定アイコンをクリックします。&#xA;- セレクター エディター内で表示されるすべてのクリックしたテキスト (例: Banking) を「{{&lt;variable_name}}」に置き換えます (この例では「aaname=&quot;{{VarIndustry}}&quot;」と「check:text=&quot;{{VarIndustry}}&quot;」)。&#xA;- [画像] のチェックをオフにします。" ClickType="Single" DisplayName="クリック 'Banking'" sap:VirtualizedContainerService.HintSize="360,372" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/suppliers?locale=jp" DesignTimeRectangle="64, 176, 54, 24" ElementType="Text" FriendlyName="'Banking'" FullSelectorArgument="&lt;webctrl isleaf='1' parentid='industry-list0' tag='SPAN' /&gt;" FuzzySelectorArgument="[String.Format(&quot;&lt;webctrl isleaf='1' parentid='industry-list0' tag='SPAN' type='' aaname='{0}' check:text='{0}' /&gt;&quot;, VarIndustry)]" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAYCAYAAACx4w6bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFBSURBVFhH7ZPhsYIwEIRfST67ULtQu9AmtAutQtugmTifw+p6RlDRH0G+mQwkd7nbJeEv9ZTBWGkMxkpjMFYav2FsuZin8f/oZnwKau93u3p2paqqc59crAt3xrbbTT1Lab1andc+wSNj36LRGEJ6aSyK4d2vqceUO5tOLvHj8VBHb2vp+rEG7FEu/bkpDNVxTcBcMWqQG3Ma/zE2OD5HCDlCexENNEKwcGPk+UeJxjyuPqrLuvdVvNWYJ0RxEW8Y9+pUhIyx5qYgGiPX8bh/IPHUicUELyqxPh41VK4bZx5FQzQWbwpx1fZc0ckYw4XCq8aI88wJ72Isp/vpq0hhvQPzd4wBdVy8i20z5ppAOlqNkaThBcDjNOf5jjFQHXjFGEQdjEZjpRI/GhRvjJPSyTvFGZMRHzl6cRVzDMbKIqUTi4qyhf726LIAAAAASUVORK5CYII=" InformativeScreenshot="b381b762f4f2bf782c2f24ffb77586a4.png" ScopeSelectorArgument="&lt;html title='UiPath Demo App' /&gt;" SearchSteps="FuzzySelector" Text="Banking" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="56, 170, 238, 36" ElementType="Button" FriendlyName="'Banking'" FullSelectorArgument="&lt;webctrl aria-role='option' idx='1' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="[String.Format(&quot;&lt;webctrl aria-role='option' aaname='{0}' tag='BUTTON' type='button' check:text='{0}' /&gt;&quot;, VarIndustry)]" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPIAAAAoCAYAAADEzaftAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJuSURBVHhe7dhLbhNBFEbhXhAgYBfALoA1hEHYBBlYntnTsAqyDW8g8VuW/JJfhf5OX3NTOEKJO8hVPp9Uibuq3O7JcXdSBGe32zEYjBMfh+xD1obtdhvW6zWDwTjhsdlsylZ91IUODi0AOG1qVu1KoRfL5bI8AJCW6XRaBl3oVq0DAOkZj8fl43axWq3CZDKppgGkZDgcBjVc6LF6NBpV0wBS0u/3yz+Ni8ViEQaDQTUNICXdbjeoYUIGEnZ3dxfm83ko9KPX61XTAFJye3t7H/JsNitvzwDSQ8hABvYht1qt0Gw2q2kAKWk0GqHdbnNHBlLGozWQAUIGMnBUyF+/fA7v3719MOqic/+8vq6O/uh0OuXnHFoDztXRIV9d/aiOQvh+eVnO1eGxkAH8rdaQFR4hA/9frSHH8em1f+z2a7b308cP+/Wbm1/V6sNz2eO05kTvsb36fD0JaNh5/DWJjm1N59DeeA+Qslr/RlYgnj9WeNpj7L2KVBSWAjU+ZO3zXwJxyH7dPsfOq3n/ubZOyMhJrXfkOMaYDyx+r911jYWsOR+xxCFrr+fX/ReC4Y6M3NQasviILE4/HgvM9vrQdRxHKnHI8ZOA1u3cfq8hZOTmxULW8GHKU0PWun4fCvWYkA9dN5CyF3u0Vkj2WnT8nJBF5/Gx+jj/FbK/JrHrIGTkpNZ/dvlgxK8rNv1+Tshi55GnhCzxdWgQMnJyVMipir8kgNSdXci6E9udHchF9iFbuH4AuTnLR2sgN4QMZICQgQwQMpABQgYyQMhABggZyAAhAxkgZCADhAxkYB/yt4uL8Ob1q2oaQEruQ56H3797BvfSy2caAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" Text="Banking" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='BUTTON' type='button' /&gt;" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NClick>
+                            </Sequence>
+                            <uix:NClick ClickType="Single" DisplayName="クリック '保存'" sap:VirtualizedContainerService.HintSize="400,165" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/suppliers?locale=jp" DesignTimeRectangle="654, 688, 38, 19" ElementType="Text" FriendlyName="'保存'" FullSelectorArgument="&lt;webctrl id='id__267' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='id__267' tag='SPAN' type='' aaname='保存' check:text='保存' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACoAAAAXCAYAAAB9J90oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEaSURBVFhH7ZMxCsJAEEU9gtfyMraew9Y72Fpa2Ao2diJY2CkWgljYRF5gYFj+7mwkoEI+PDS72cnLbHY0nq6bf2AQ7ZtB1LPaX1vUXC3VooSHlaLWwfHybBabs5yrpUqUh2xP91aUX3WPF41eKE2upqdK9PZ4NbPloVrUU1rThVDUusn/T0QJNXKhCWpdSihKIcL/aEvTtbwUa9JxsFpqTlEU5UGgCtIlDkk6biCS6xYprVVkRfkmKTaZ79rCXEcxMdvqkih11VyOcOtNNB23IOXH/YshatdRfA1FZ1G7ZmvpOKjv0ETTcSDUUXM5Oon6A+C/UXUwviZKfOfUYfL3fLWjnujUK1EfP15DKPorDKJ9M4j2zZ+Irps3fwROXn5BEawAAAAASUVORK5CYII=" InformativeScreenshot="3a05372e6f3973ff41dcc8694e0a6a18.png" ScopeSelectorArgument="&lt;html title='UiPath Demo App' /&gt;" SearchSteps="FuzzySelector, Image" Text="保存" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRow.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ExcelForEachRow>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp BrowserType="IE" IconBase64="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" InformativeScreenshot="981ad3d270b4a91053bcae3e57b90a2e.png" Selector="&lt;html title='UiPath Demo App'/&gt;" Url="https://www.rpasamples.com/suppliers?locale=jp" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
